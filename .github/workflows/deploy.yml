@@ -69,5 +69,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
           bucket: gha-custom-action-bve-hosting
-          dist-folder: ./dist
+          dist-folder: ./index_test.html #./dist
           # bucket-region: us-east-2
