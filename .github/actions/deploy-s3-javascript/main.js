@@ -10,7 +10,7 @@ function run() {
     core.notice('Hello from my custom js action');
     core.notice('bucket: ' + bucket);
     core.notice('bucketRegion: ' + bucketRegion);
-    core.notice('distFolder: ' + disFolder);
+    core.notice('distFolder: ' + distFolder);
 
     // 2) Upload Files
     const s3Uri = `S3://${bucket}`;
