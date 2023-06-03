@@ -8,6 +8,9 @@ function run() {
     const bucketRegion = core.getInput('bucket-region', { required: true });
     const distFolder = core.getInput('dist-folder', { required: true });
     core.notice('Hello from my custom js action');
+    core.notice('bucket: ' + bucket);
+    core.notice('bucketRegion: ' + bucketRegion);
+    core.notice('distFolder: ' + disFolder);
 
     // 2) Upload Files
     const s3Uri = `S3://${bucket}`;
