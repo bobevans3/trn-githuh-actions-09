@@ -11,10 +11,11 @@ function run() {
     core.notice('bucket: ' + bucket);
     core.notice('bucketRegion: ' + bucketRegion);
     core.notice('distFolder: ' + distFolder);
-    core.notice('command: ' + 'aws s3 sync ${distFolder} ${s3Uri} --debug')
 
     // 2) Upload Files
     const s3Uri = `S3://${bucket}`;
+
+    core.notice('command: ' + 'aws s3 sync ' + distFolder + s3Uri + '--debug')
 
     exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --debug`); // --region ${bucketRegion}`);
 }
