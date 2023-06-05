@@ -70,5 +70,5 @@ jobs:
           AWS_DEFAULT_REGION: us-east-1
         with:
           bucket: gha-custom-action-bve-hosting
-          dist-folder: ./index_test.html #./dist
+          dist-folder: ./index-test.html #./dist
           # bucket-region: us-east-2
