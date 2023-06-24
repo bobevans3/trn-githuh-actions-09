@@ -15,9 +15,9 @@ function run() {
     // 2) Upload Files
     const s3Uri = `S3://${bucket}`;
 
-    core.notice('command: ' + 'aws s3 sync ' + distFolder + s3Uri + '--debug')
+    core.notice('command: ' + 'aws s3 sync ' + distFolder +' ' + s3Uri + ' ' + '--debug')
 
-    exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --debug`); // --region ${bucketRegion}`);
+    exec.exec(`aws s3 sync ${distFolder} ${s3Uri}`); // --debug`); // --region ${bucketRegion}`);
 }
 
 run();
